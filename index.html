@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>PPE 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/nlp.png" type="image/png">
+
+    <script src="./assets/js/script.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li>
+          <a class="lien" href="#home">Accueil</a>
+        </li>
+        <li>
+          <a class="lien" href="#un">Chapitre 1</a>
+        </li>
+        <li>
+          <a class="lien" href="#deux">Chapitre 2</a>
+        </li>
+        <li>
+          <a class="lien" href="#trois">Chapitre 3</a>
+        </li>
+        <li>
+          <a class="lien" href="#quatre">Chapitre 4</a>
+        </li>
+        <li>
+          <a class="lien" href="#cinq">Chapitre 5</a>
+        </li>
+        <li>
+          <a class="lien" href="#six">Chapitre 6</a>
+        </li>
+        <li>
+          <a class="lien" href="#sept">Chapitre 7</a>
+        </li>
+        <li>
+          <a class="lien" href="#huit">Chapitre 8</a>
+        </li>
+        <li>
+          <a class="lien" href="#neuf">Chapitre 9</a>
+        </li>
+        <li>
+          <a class="lien" href="#us">Team</a>
+        </li>
+    </ul>
+    </nav>
+
+    <section id="home">
+      <h2 id="text"><strong>P</strong>rogrammation et <strong>P</strong>rojet <strong>E</strong>ncadré <strong>2</strong></h2>
+      <h2 id="text"> - Groupe 6 - </h2>
+
+      <hr class="divide"/>
+
+      <p>Dans le cadre de ce projet, notre objectif premier était de repérer les expressions qui ont fait l'actualité au fil du temps dans les publications de différents journaux en ligne.</p>
+      <p>Ainsi, ce rapport vise à décrire et commenter entre le livrable que nous avons reçu et les objectifs initiaux de ce projet. En effet, pour chaques parties nous répondrons à différentes questions : <em>Est-ce que cela marche ? / Qu'est ce qui marche ou pas ?</em>, ou encore <em>Comment cela fonctionne ? / Pourquoi cela ne fonctionne pas ?</em>. Pour cela, vous pouvez naviguer facilement à travers les différents chapitres en utilisant le menu/sommaire à droite :)</p><br/>
+
+      <p>Dans le cadre de ce projet, notre équipe est composée des meilleures spécialistes dans le domaine du Traitement Automatique des Langues. Ainsi, chaque spécialiste était responsable des points correspondants :</p>
+      <table>
+        <tr>
+          <th>L'équipe</th>
+          <th>Travail</th>
+        </tr>
+        <tr class="is-warning">
+          <td>Lydia</td>
+          <td>Chargée des points 1, 2 et 3</td>
+        </tr>
+        <tr class="is-warning">
+          <td>Patricia</td>
+          <td>Responsable Chef des points 4, 5 et 6</td>
+        </tr>
+        <tr class="is-warning">
+          <td>Lise</td>
+          <td>Leader des points 7, 8 et 9</td>
+        </tr>
+
+      </table>
+
+      <p>Cette répartition a permis à notre Team d'attribuer les tâches en fontion des compétences individuelles et des préférences. Ainsi, la confiance et la collaboration entre les membres de l'équipe a contribué de façon efficace pour atteindre tous les objectifs dans le délai fixé.</p>
+
+    </section>
+
+    <section>
+      <h1 id="un" class="titre"><strong>1. RSS partie 1 : lire un flux unique de trois façons : avec <em>re</em>, <em>etree</em> ou <em>feedparser</em></strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Pour ce chapitre, l'objectif est de lire un flux de données unique qui est un fichier xml de différentes manières données en option.</p>
+      <br/>
+
+      <p>Dans un premier temps, il fallait juste écrire un programme qui donnait à l'utilisateur la possibilité de choisir un mode de lecture d'un fichier xml parmis les trois déjà cités en dessus. Pour cela, les membres de cette équipe ont pris le choix de n'utiliser que <em>feedparser</em> et <em>etree</em> en mettant de côté les expressions régulières. D'une part, nous pouvons comprendre ce choix car cela pouvait être plus adapté lorsque nous travaillons avec des formats de données structurées tels que les flux RSS, Atom et XML. Ils offrent une meilleure abstraction pour travailler avec ces formats spécifiques et peuvent simplifier le processus d'extraction des informations requises.</p>
+      <p>Puisque le programme sur lequel nos camarades avaient travaillé a été modifié au fil des TP, cette fonctionnalité ne peut plus être exploitée, et donc ne fonctionne pas. Ainsi, nous avons dû faire plusieurs manipulations pour lire le flux unique.</p><br/>
+      <p>Pour commencer, nous avons copier la commande suivante sur le terminal :</p>
+
+      <p> - <strong>sudo apt install vim</strong></p>
+      <p>Nous avons décidé d'installer l'éditeur de texte <strong>vim</strong> sur notre système Linux car cela va nous permettre d'effectuer des modifications sur le script.</p>
+      <p>Voici, la commande que nous avons lancé :</p>
+      <p> - <strong>vim rss_reader.py</strong></p>
+      <p>Ensuite, il faut appuyer sur la lettre <strong><em>i</em></strong> pour insérer et coller la partie du <strong>main</strong> pour pouvoir appeler la méthode <strong>-m</strong>. Ainsi, cela permet de lire le flux de données :</p>
+      <p> - la fonction <strong>main</strong> : la partie du script qui manque </p>
+      <div style="text-align: center;">
+        <img src="./assets/img/main⁄ly1.png" />
+      </div>
+      <br/>
+      <p>Ensuite, nous avons lancé les commandes :</p>
+      <p> - <strong>:w !python3 - chemin_vers_fichier.xml -m etree</strong></p>
+      <p> - <strong>:w !python3 - chemin_vers_fichier.xml -m feedparser </strong></p>
+      <br/>
+      <p>Voici, une illustration du résultat que nous avons eu sur le terminal</p>
+      <p> - <strong>Affichage de flux unique RSS</strong> : l'affichage du flux RSS unique sur la sortie standard</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/fluxUnique.png" />
+      </div>
+
+      <p>Pour finir, nous pouvons appuyer sur la touche suivante, afin de revenir sur le terminal sans que le programme <strong>rss_reader.py</strong> ne soit touché :</p>
+      <p> - <strong>:Q</strong></p>
+
+      <p>Malgré que l'on soit obligé de faire quelques manipulations avant de pouvoir obtenir le résultat, on peut dire que la mission est remplie</p>
+
+    </section>
+
+    <section>
+      <h1 id="deux" class="titre"><strong>2. RSS partie 2 : lire l'arborescence des fichiers (et appliquer des filtres)</strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Dans cette partie, le travail voulu est de lire l'ensemble du corpus ainsi que de pouvoir appliquer des filtres sur ces données qui sont les articles contenus dans le corpus </p>
+      <br/>
+
+      <p>Les filtres sont appliqués dans la fonction <strong>main</strong> du programme, juste avant de stocker les données filtrées dans l'objet <strong>Corpus</strong>. Voici comment on applique les filtres :</p>
+
+      <p> - <strong><em>La création des filtres</em></strong> : Avant d'appliquer les filtres, le programme va créer une liste de filtres à appliquer aux données. Ces filtres sont des fonctions qui déterminent si un article doit être inclus ou non en fonction de certains critères. Par exemple, la date, les catégories ou les sources.</p>
+      <p> - <strong><em>L'application des filtres</em></strong> : Une fois la liste des filtres créée, le programme parcourt chaque article de la source de données et vérifie s'il passe tous les filtres. Si un article passe tous les filtres, il est inclus dans le corpus final, sinon il est ignoré.</p>
+      <p> - <strong><em> Les filtres disponibles</em></strong> :
+
+      <table>
+      <tr>
+          <th>Filtre</th>
+          <th>Analyse</th>
+        </tr>
+        <tr class="is-warning">
+          <td>filtre_start_date</td>
+          <td>Il filtre les articles pour conserver seulement ceux qui ont été publiés à partir d'une certaine date</td>
+        </tr>
+        <tr class="is-warning">
+          <td>filtre_end_date</td>
+          <td>Il filtre les articles pour conserver seulement ceux publiés avant une certaine date.</td>
+        </tr>
+        <tr class="is-warning">
+          <td>filtre_categories</td>
+          <td>Il filtre les articles pour conserver seulement ceux qui appartiennent à certaines catégories.</td>
+        </tr>
+         <tr class="is-warning">
+          <td>filtre_sources</td>
+          <td>Il filtre les articles pour conserver seulement ceux qui proviennent de certaines sources.</td>
+        </tr>
+      </table>
+      <br/>
+
+      <p>Voici, le résultat qu'on obtient en lançant la commande pour appliquer les diverses filtres :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/filtreMultiple.png" />
+      </div>
+      <br/>
+
+      <p>En obtenant le fichier avec l'extension .xml, nous pouvons voir qu' il contient les articles qui correspondent aux filtres. Voici une capture d'écran pour illustrer nos propos :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/contenuessaixml.png" />
+      </div>
+      <br/>
+
+      <p> - <strong><em>Composition des filtres</em></strong> : Les filtres peuvent être combinés pour obtenir des critères de filtrage plus complexes. Par exemple, on peut filtrer les articles qui appartiennent à certaines catégories et qui ont été publiés après une certaine date.</p>
+      <br/>
+
+      <p>En résumé, les filtres sont des fonctions qui permettent de restreindre les données RSS en fonction de critères spécifiques, offrant ainsi à l'utilisateur un moyen flexible de contrôler les données incluses dans le corpus final.</p>
+
+    </section>
+
+    <section>
+      <h1 id="trois" class="titre"><strong>3. (Dé)sérialiser les flux selon trois formats : <em>xml</em>, <em>pickle</em> ou <em>json</em></strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Dans ce chapitre, le but est de pouvoir sérialiser et désérialiser le corpus (filtré ou non filtré) dans des fichier xml, pickle et json</p>
+      <br/>
+      <p>La sérialisation consiste à prendre un objet Python (tel qu'une liste, un dictionnaire, ou même des objets personnalisés) et le convertir en une forme qui peut être enregistrée dans un fichier ou envoyée sur un réseau. Cette forme peut être une chaîne de caractères, un fichier binaire, ou tout autre format de données approprié. La sérialisation est souvent utilisée pour sauvegarder des données, partager des données entre différents programmes, ou envoyer des données sur Internet.</p>
+      <p>L'option qui permet d'obtenir cette fonctionalité est <strong>-z</strong>. Comme attendu, l'utilisateur doit préciser l'un des formats de sérialisation suivants : <em>xml</em> , <em>pickle</em> ou <em>json</em>.</p>
+      <br/>
+
+      <p>Tandis que la déserialisation est l'inverse de la sérialisation. Elle consiste à prendre les données sérialisées (par exemple, une chaîne de caractères ou un fichier binaire) et à les reconstruire en objets Python. Cela permet de récupérer les données originales et de les utiliser dans le programme. La déserialisation est souvent utilisée pour charger des données à partir de fichiers de sauvegarde, recevoir des données sur un réseau, ou traiter des données provenant d'autres sources.</p>
+      <p>L'option qui permet d'obtenir cette fonctionalité est <strong>-l</strong>. Mais aussi l'utilisateur précise l'un des formats de désérialisation suivants : <em>xml</em> , <em>pickle</em> ou <em>json</em>.</p>
+      <br/>
+
+      <p>La combinaison entre les différents formats des fichiers de sérialisation et déserialisation permet la portabilité des programmes et des fichiers. Ainsi, cela signifie qu'un programme peut utiliser un fichier en format pickle puis stocker le résultat du traitement dans un fichier xml</p>
+      <p>En effet, cette option est fonctionnelle dans le programme fait par nos collègues</p>
+      <br/>
+
+      <p>Dans ce chapitre, nous avons produit une combinaison de format de sérialisation et déserialisation. Par exemple, nous avons le fichier <strong>essai.json</strong> qui est le fichier sérialisé au format json et que l'on veut désérialiser et le sérialiser au format <em>xml</em> dans un fichier appelé <strong>deserialize.xml</strong>. Voici, des illustrations pour illustrer notre propos :</p>
+      <p> - Résultat de la combinaison de format</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/combinaison2.png" />
+      </div>
+      <br/>
+
+      <p> - Capture qui montre l'appariton de <strong>deserialize.xml</strong></p>
+      <div style="text-align: center;">
+        <img src="./assets/img/resultatCom.png" />
+      </div>
+      <br/>
+
+      <p> Ainsi, nous pouvons voir que cette partie remplie totalement le cahier des charges des fonctions souhaitées par le client :)</p>
+
+
+    </section>
+
+    <section>
+      <h1 id="quatre" class="titre"><strong>4. Effectuer l'analyse morphosyntaxique du contenu textuel avec <em>spacy</em>, <em>trankit</em> et <em>stanza</em></strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Pour ce chapitre, l'objectif est d'enrichir le corpus avec les sorties des différents analyseurs morphosyntaxiques. Pour cela, nous devons être capable de recharger un corpus, ajouter les analyses d'un des trois analyseurs morphosyntaxiques proposés dans un format unifié et de sauvegarder le résultat de l'analyse.</p>
+
+      <br/>
+      <p>Pour commencer, il faut prendre en main les outils en consultant la documentation. Voici les liens qui vous mènent à la documentation de SpaCy, Stanza et Trankit :</p>
+
+      <p> - SpaCy : <a href="https://spacy.io/">https://spacy.io/</a></p>
+      <p> - Stanza : <a href="https://stanfordnlp.github.io/stanza/">https://stanfordnlp.github.io/stanza/</a></p>
+      <p> - Trankit : <a href="https://trankit.readthedocs.io/en/latest/">https://trankit.readthedocs.io/en/latest/</a></p>
+
+      <br/>
+      <p>Dans un premier temps, il fallait écrire un petit programme de démonstration de l'outil, en le nommant : demo_xxx.py. Pour cela, chaque programme doit lancer l'analyse d'un petit texte et récupérer pour chaque token du texte : sa forme, son lemme et sa partie du discours. Pour les trois fichiers (demo_trankit.py | demo_spacy.py | demo_stanza.py ), nous avons la forme, le lemme et la partie du discours. Voici les captures d'écran qui illustrent le résultat de chaque programme :</p>
+
+      <p> - <strong>demo_trankit.py</strong> : le token, la partie du discours et le lemme</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-1.png" />
+      </div>
+
+      <p> - <strong>demo_spacy.py</strong> : la forme, la partie du discours et le lemme </p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-2.png" />
+      </div>
+
+      <p> - <strong>demo_stanza.py</strong> : la forme, la partie du discours et le lemme </p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-3.png" />
+      </div>
+
+      <br/>
+      <p>Ensuite, il fallait continuer sur de l'analyse des contenus textuels des articles. Pour cela, il fallait créer un fichier analyzers.py et ajouter des fonctions dédiées à chaque analyseur en chargeant un outil et l'appliquer sur un item. De plus, il fallait adapter le code pour bien sauvegarder les analyses car les trois outils vont produire des résultats similaires mais avec des structures de données différentes et spécifiques à l'outil. Par exemple, pour adapter cette étape il fallait créer des tokens et stocker les informations qui s'y trouvent.</p>
+
+      <p>Dans le code que nous avons reçu, nous pouvons affirmer que l'objectif de ce chapitre a été atteint. En lançant la ligne de commande (voir dans le <a href="https://gitlab.com/plurital-ppe2-2024/groupe6/projet/-/blob/doc/README.md?ref_type=heads">README.md</a>), nous pouvons voir que l’outil Stanza analyse parfaitement les fichiers output que nous avons générés (pickle, json ou xml). Dans chaque fichier, nous pouvons observer que la dataclass Token possède une chaine pour la forme "shape", le lemme "lemma" et la partie du discours "pos". Ainsi, on prend en argument un Item et on le retourne enrichi par l'analyse de stanza. Voici les captures d'écrans qui illustrent les analyses morphosyntaxiques du fichier .json et .xml :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-4.png" />
+      </div>
+
+      <br/>
+      <p>Par ailleurs, le programme ne permet pas d'analyser notre fichier avec SpaCy et Trankit. Voici les erreurs que nous obtenons pour les deux outils :</p>
+      <p> - Erreur de Trankit : <strong>TypeError: Token.__init__() missing 4 required positional arguments: 'pos', 'dep', 'gov', and 'gov_id'</strong></p>
+      <p> - Erreur de SpaCy : <strong>TypeError: Token.__init__() missing 2 required positional arguments: 'gov' and 'gov_id'</strong></p>
+      <p>Ces erreurs sont toutes deux liées à des problèmes d'outils lors de l'initialisation du Token. Les objets Token sont généralement utilisés pour représenter des mots ou des tokens dans un texte, et il y a un certain nombre d'arguments qui deviennent obligatoires.</p>
+      <p>Pour Trankit, cette erreur indique que Token devrait avoir quatre arguments : pos, dep, gov et gov_id. Par ailleurs, pour SpaCy on nous indique qu'il manque encore deux arguments : gov et gov_id.</p>
+      <p>Même si l'objectif n'est pas tout à fait atteint car nous n'avons qu'un analyseur sur trois qui fonctionne, nous pensons que cela reste tout de même très satisfaisant. Du moment qu'il y a un seul outil qui fonctionne, nous pouvons amplement nous concentrer dessus.</p>
+
+      <br/>
+      <p>De plus, l'utilisateur peut être encore plus libre d'utiliser les fonctions à sa guise car il peut combiner les lignes de commande. Par exemple, en utilisant une commande bash pour charger un corpus, l'analyser avec votre outils et sauvegarder le résultat.</p>
+
+
+
+    </section>
+
+
+    <section>
+      <h1 id="cinq" class="titre"><strong>5. Effectuer l'analyse en dépendances syntaxiques avec les mêmes outils</strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Dans ce chapitre, l'objectif est de créer une structure arborée qui représente les relations grammaticales entre les mots. Pour cela, il fallait adapter le fichier <strong>analyzers.py</strong>, afin que les fonctions d'analyse enrichissent les Token de l'analyse en dépendances syntaxiques que peut fournir chaque outil.</p>
+      
+      <br/>
+      <p>Dans un premier temps, l'équipe précédente a continué d'explorer nos trois outils en consultant la documentation (voir le <a href="#quatre">Chapitre 4</a>), mais aussi elle a proposé des programmes de démonstration. Ces programmes permettent d'analyser un texte en obtenant des informations sur les dépendants, les gouverneurs et la nature du lien. Pour cela, une phrase doit être une liste de tokens, et où chaque token contiendra les informations des analyses syntaxiques. Voici les captures d'écran qui illustrent le résultat de chaque demo_deps_xxx.py :</p>
+      <p> - <strong>demo_deps_stanza.py</strong> : chaque phrase est une liste où chaque token contient la forme du token, son lemme, sa partie du discours, sa position dans la phrase, le dépendant du token, la position du gouverneur dans la phrase, le gouverneur du token, et la relation de dépendance entre le token et son gouverneur.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-5.png" />
+      </div>
+
+      <br/>
+      <p> - <strong>demo_deps_spacy.py</strong> : un  dictionnaire pour chaque phrase avec comme valeurs les informations de l'analyse, dont la forme, son lemme, sa partie du discours, sa relation de dépendance avec son gouverneur, et les enfants qu'il gouverne.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-6.png" />
+      </div>
+
+      <br/>
+      <p>Cependant, en lançant le programme <strong>demo_deps_trankit.py</strong>, nous faisons face à un problème. Dans le dépôt, nous n'avons pas le même chemin vers le fichier qu'il faut analyser, donc il n'est pas possible de le lancer.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-7.png" />
+      </div>
+
+      <p>En discutant avec notre équipe, nous préférons créer un dossier en le renommant de la même façon pour pouvoir tester le programme. Pour nos futurs collègues, nous vous conseillons de changer le chemin du fichier vers le votre :)</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-8.png" />
+      </div>
+
+      <br/>
+      <p>Lorsqu'on lance de nouveau le programme, nous pouvons voir que la structure est la même que le programme précédent avec le logiciel SpaCy. Nous obtenons de nouveau un dictionnaire pour chaque phrase et où les valeurs les informations de l'analyse sont  la forme, son lemme, sa partie du discours, sa relation de dépendance avec son gouverneur, et les enfants qu'il gouverne.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-9.png" />
+      </div>
+
+      <br/>
+      <p>Ensuite, il fallait intégrer les dépendances  syntaxiques fournies par l'un des outils et mettre à jour vers la sérialisation correspondante. Voici les étapes qu'il fallait suivre :</p>
+      <p> - l'analyse des les dépendances syntaxiques fournies par Spacy doit obtenir une sérialisation en XML</p>
+      <p> - l'analyse des les dépendances syntaxiques fournies par Stanza doit obtenir une sérialisation en JSON</p>
+      <p> - l'analyse des les dépendances syntaxiques fournies par Trankit doit obtenir une sérialisation en PICKLE</p>
+  
+      <br/>
+      <p>Lorsqu'il s'agit de sérialiser les analyses syntaxiques vers des fichiers avec différentes extensions, telles que .xml, .pkl et .json, il est important de prendre en compte la manière dont les données sont structurées et formatées. Malheureusement, nous avons rencontré des problèmes lors de la sérialisation vers des fichiers .xml et .pkl, entraînant des erreurs de type "<em>missing required positional arguments</em>" dans la classe Token.</p>
+      <p>Comme nous l'avons indiqué précédemment, l'erreur rencontrée lors de la sérialisation vers un fichier .xml indique qu'il manque des arguments obligatoires. Nous avons vu que cela est du à une incompatibilité entre la structure des données analysées et la façon dont elles sont écrites dans le format XML. Dans la fonction <strong>analyze_spacy</strong>, nous pouvons voir que le token ne reçoit pas les arguments gov et gov_id. Voici la partie du programme qui illustre notre propos :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-10.png" />
+      </div>
+
+      <br/>
+      <p>Mais aussi, il en est de même pour la sérialisation vers un fichier .pkl. Cela a également échoué en raison d'arguments manquants  pos, dep, gov, et gov_id. Dans la fonction <strong>analyze_trankit</strong>, nous pouvons voir que les seuls arguments ajoutés au Token sont la forme, le lemme et la partie du discours. Ainsi, l'analyse en dépendances syntaxiques n'a pas été adaptée.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-11.png" />
+      </div>
+
+      <br/>
+      <p>Cependant, la sérialisation vers un fichier .json a réussi, indiquant que les données ont été correctement structurées par le format Stanza et pas pour le format XML ou SpaCy. Nous pouvons voir que la fonction <strong>analyze_stanza</strong> a été adaptée car elle contient tous les éléments qu'on a besoin pour l'analyse morphosyntaxique et des dépendances syntaxiques.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-12.png" />
+      </div>
+      <p>Voici, la capture d'écran qui illustre un extrait du résultat que nous avons obtenu :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-13.png" />
+      </div>
+
+      <br/>
+      <p>Ainsi, même si l'objectif n'est pas tout à fait atteint car nous obtenons seulement un outil sur trois qui fonctionne, nous pensons que cela reste tout de même correct. Nous pouvons voir que le code de l'équipe précédente est beaucoup plus concentré sur l'outil Stanza, plutôt que Trankit et SpaCy. En effet, dans la mesure où un seul outil répond à nos besoins de manière satisfaisante, il est plus judicieux pour nous de travailler sur la sérialisation vers json, que sur les autres outils.</p>
+      
+      <br/>
+      <p>Par ailleurs, nous avons vu que la <strong>commande bash</strong> qui permet de filtrer le corpus et analyser le résultat obtenu ne fonctionne pas :</p> 
+      <p> - python3 read_corpus.py ../2024 -z json -o output.json -r feedparser -i glob -c Politique --sources Figaro | python3 analyzers.py output.json -l json -s json -o analyzed_stanza-corpus.json -a stanza</p>
+      <p>Malheureusement, dans le programme il n'y a rien qui permet de faire cette commande. Nous pensons que l'équipe précédente a essayé de mettre un pipe entre chaque commande, mais cela n'a pas abouti.</p>
+
+    </section>
+
+    <section>
+      <h1 id="six" class="titre"><strong>6. Extraction de patrons syntaxiques 1 : patrons simples</strong></h1>
+
+      <hr class="divide"/>
+
+      <p>Dans ce chapitre, l'objectif était d'extraire les premier patron simple à partir de cette représentation :</p>
+      <p> - <strong>verbe --obj-> nom</strong> : on recueille le patron de dépendance qui a les verbes et les noms comme relation objet</p>
+      <p> - <strong>verbe --nsubj-> nom</strong> : on recueille le patron de dépendance qui a les verbes et les noms comme relation sujet</p>
+      <p> - <strong>nom --nmod-> nom</strong> : on recueille le patron de dépendance qui a les noms comme relation modifieur</p>
+
+      <br/>
+      <p>Dans le programme <strong>patterns.py</strong>, il fallait écrire une fonction qui permettait d'extraire ces premier patrons.</p>
+      <p>La fonction <strong>simple_rel</strong> est une fonction qui prend en entrée la règle, des parties de discours et une relation de dépendance.</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-14.png" />
+      </div>
+
+      <br/>
+      <p>Ensuite, elle renvoie à une autre fonction implémentée qui s'intitule <strong>pat</strong>. Cette fonction permet d'extraire les patrons de dépendances syntaxiques correspondant à la règle inscrite dans <strong>PATTERNS</strong>. Nous pouvons voir que chaque token de la phrase est analysé pour vérifier s'il correspond à la règle définie. En trouvant le point commun de ces patrons simples, nous pouvons voir que l'équipe a décrété qu'il fallait avoir la position du <strong>pos2</strong>, la relation de dépendance <strong>deprel</strong>, et le parent qui a la position <strong>pos1</strong>. Si ces conditions sont respectées, un objet <strong>Match</strong> est ajouté à la liste des résultats, contenant toutes nos informations. Voici la capture d'écran qui illustre la fonction : </p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-15.png" />
+      </div>
+
+      <br/>
+      <p>Lorsqu'on lance le programme à l'aide d'une <strong>commande bash</strong>, nous pouvons voir qu'il sauvegarde le résultat dans un format tabulaire. Pour chaque patron, on récupère les lemmes retrouvés avec ce patron, ainsi que leurs comptes. Voici un extrait du fichier tabulaire :</p>
+  
+      <table>
+        <tr>
+          <th>predicate</th>
+          <th>lemma_predicate</th>
+          <th>relation</th>
+          <th>cat/argument</th>
+          <th>lemma/argument</th>
+          <th>Mesure</th>
+          <th>IM</th>
+        </tr>
+        <tr class="is-warning">
+          <td>VERB</td>
+          <td>regretter</td>
+          <td>obj</td>
+          <td>dévoiement</td>
+          <td>1</td>
+          <td>6.491853096329675</td>
+          <td></td>
+        </tr>
+        <tr class="is-warning">
+          <td>VERB</td>
+          <td>amener</td>
+          <td>nsubj</td>
+          <td>décision</td>
+          <td>1</td>
+          <td>6.491853096329675</td>
+          <td></td>
+          
+        </tr>
+        <tr class="is-warning">
+          <td>NOUN</td>
+          <td>juridiction</td>
+          <td>nmod</td>
+          <td>pays</td>
+          <td>1</td>
+          <td>6.491853096329675</td>
+          <td></td>
+        </tr>
+      </table>
+      <p>Nous pouvons voir que dans la colonne <strong>Mesure</strong>, le résultat reste toujours le même, donc nous supposons que l'équipe précédente n'a pas pu calculer les différentes mesures. La colonne information mutuelle <strong>IM</strong> n'était pas demandée pour ce chapitre, donc nous n'allons pas l'évaluer pour le moment.</p>
+
+    
+      <br/>
+      <p>Ainsi, nous pouvons voir que l'objectif de la séance a été atteint. Nos collègues ont fait attention de travailler avec les résultats obtenus de l'analyseur Stanza comme cela a été demandé. Comme nous l'avons vu dans le <a href="#quatre">Chapitre 4</a> et <a href="#cinq">Chapitre 5</a>, l'analyse de l'outil SpaCy et Trankit ne fonctionne pas, donc on procède seulement avec l'outil Stanza. Le résultat renvoyé par la commande est l'extraction de patrons simples écrit sous une forme tabulaire dans un fichier qu'on ouvre dans le <strong>main</strong>. En effet, si vous souhaitez changer le nom du fichier vous pourriez le modifier dans la fonction <strong>main</strong> :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/pa-16.png" />
+      </div>
+
+    </section>
+
+
+    <section>
+      <h1 id="sept" class="titre"><strong>7. Extraction de patrons syntaxiques 1 : patrons plus complexes</strong></h1>
+
+      <hr class="divide"/>
+
+		<p>A partir de maintenant, le fichier d'entrée du corpus (tokenisé) sera en format <b>JSON</b>.</p>
+      <p>Pour cette étape, l'objectif était de commencer à se rapprocher le plus possible du site <b>Les voisins de Le Monde</b> (site : <a href="http://redac.univ-tlse2.fr/voisinsdelemonde/">voisinsdelemonde</a>). Le programme ne prenait pas en compte les relations que l'on catégorisera comme complexe d'un point de vu syntaxique. C'est-à-dire que l'on souhaite récupérer dans le corpus, en plus des trois relations décrites dans la section précédente, les mots liés à une préposition ou un mot subordonnant.</p>
+      <br/>
+
+      <p>Voici les nouvelles constructions proposées :</p>
+      <list>
+		  <li><b>"v-xcomp-v-mark-adp"</b> : relation xcomp entre deux verbes, le verbe dépendant est le gouverneur d'une adposition avec une relation de dépendance mark.</li>
+		  <li><b>"v-nsubj-n-amod-adj"</b> : relation nsubj entre un verbe (GOV) et un nom (DEP), le nom est le gouverneur d'un adjectif avec une relation de dépendance amod.</li>
+		  <li><b>"v-obl:mod-n-case-adp"</b> : relation obl:mod entre un verbe (GOV) et un nom (DEP), le nom est le gouverneur d'une adposition avec une relation de dépendance case.</li>
+		  <li><b>"n-conj-n-cc-cconj"</b> : relation conj entre deux noms, le nom dépendant est le gouverneur d'une conjonction de coordination avec une relation de dépendance cc.</li>
+      </list>
+
+      <br/>
+		<p>Elles sont visibles dans cette partie du programme python <b>patterns.py</b> :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/7_patterns_complexes.png" />
+      </div>
+      <br/>
+
+      <p>Nous allons maintenant vérifier si le programme répond bien à cette attente en lançant les commandes suivantes :</p>
+      <list>
+        <li>python3 read_corpus.py ../2024 -z json -o output_etape7.json -r feedparser -i glob -c Politique --sources Figaro</li>
+      </list>
+      <p>-> Créer le fichier en format json contenant le corpus filtré (catégorie Politique et source Figaro).</p>
+
+      <list>
+        <li>python3 analyzers.py output_etape7.json -l json -s json -o analyzed_stanza-corpus.json -a stanza</li>
+      </list>
+      <p>-> Créer le fichier au format json du corpus filtré et segmenté.</p>
+
+      <list>
+        <li>python3 patterns.py analyzed_stanza-corpus.json -l json</li>
+      </list>
+      <p>-> Créer le fichier csv de toutes les relations possibles listées dans la partie du code présenté ci-dessus. Cette commande retourne un fichier nommé <b>result_pattern.csv</b> .</p>
+
+      <br/>
+      <div style="text-align: center;">
+        <img src="./assets/img/7_patterns_complexes_tableau.png" />
+      </div>
+      <br/>
+
+      <p>Comme nous pouvons le voir ci-dessus les patterns complexes comme ceux qui ont une relation "case" (ligne 7) ou "mark" (ligne 14) sont bien présents.</p>
+      <br/>
+
+      <p>Attention, il est important de bien suivre les commandes indiquées ci-dessus car le programme n'est pas adapté au fichier <b>corpus_analyzed.json</b> disponible sur iCampus. </p>
+      <p>Voici le message d'erreur qui s'affichera si vous tentez de lancer le programme patterns.py sur ce fichier :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/7_erreur_id.png" />
+      </div>
+      <br/>
+
+      <p>En effet, l'erreur est due à la différence entre les informations contenues dans chaque token :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/7_token1.png" />
+        <img src="./assets/img/7_token2.png" />
+      </div>
+      <br/>
+
+		<p>Dans le cas de notre programme <b>analyzers</b> manipule des objects contenant des ID. Alors que dans le corpus déjà analysé disponible sur iCampus, il n'y a pas d'ID.</p>
+      <p>Voici de quoi est composé chaque token et ce qui figure donc dans l'analyse au format json du corpus filtré :</p>
+      <div style="text-align: center;">
+        <img src="./assets/img/7_classe_token.png" />
+      </div>
+
+    </section>
+
+
+    <section>
+      <h1 id="huit" class="titre"><strong>8. Le calcul de l'information mutuelle sur les dépendances</strong></h1>
+
+      <hr class="divide"/>
+
+      <p>L'objectif de cette étape du projet était d'ajouter le calcul de l'<b>information mutuelle</b> (IM) pour chaque pattern du tableau de sortie.</p>
+      <p>L'information mutuelle est une manière de calculer la proximité entre des prédicats ou des arguments. C'est une mesure mathématique qui permet d'avoir le degré de dépendance entre deux variables aléatoires. L'information mutuelle, autrement appelée Pointwise Mutual Information se calcule de la manière suivante :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/8_calcul_im.png" />
+      </div>
+
+      <list>
+		  <li><b>p(x, y)</b> est la probabilité jointe de x et y</li>
+		  <li><b>p(x) et p(y)</b> sont les probabilités de x et de y respectivement</li>
+      </list>
+      <br/>
+
+      <p>Voici le tableau au format csv renvoyé par la suite de commande suivante :</p>
+      <list>
+        <li>python3 read_corpus.py ../2024 -z json -o output_etape8.json -r feedparser -i glob -c Politique --sources Figaro</li>
+        <li>python3 analyzers.py output_etape8.json -l json -s json -o analyzed_stanza-corpus_etape8.json -a stanza</li>
+        <li>python3 patterns.py analyzed_stanza-corpus_etape8.json -l json</li>
+      </list>
+
+      <br/>
+		<p>(Se référer à l'image du tableau csv <a href="#sept">chapitre 7</a>.)</p>
+      <br/>
+
+      <p>Nous pouvons voir dans le tableau que le contenu des colonnes est comme décalé du nom des colonnes.</p>
+		<p>Voici le code qui a permi de faire le compte des patterns (colonne <b>mesure</b>) et le calcul de l'IM (colonne <b>IM</b>).</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/8_tableau_decale.png" />
+      </div>
+      <br/>
+
+      <p>Nous observons donc dans ce code qu'il n'y pas autant d'information pour chaque ligne que de colonnes indiquées en entête. En effet, ligne 140, on écrit dans le csv 7 noms de colonnes. Plus bas, à la ligne 158, c'est seulement 6 informations qui sont écrites. Le décalage des informations est dû à l'absence de la partie du discours de l'argument de la relation. En effet, dans le cas présent, on affiche seulement le lemme de l'argument mais pas son POS.</p>
+      <br/>
+      <p>Nous pourrions proposer quelques changements pour obtenir un tableau plus cohérent, comme les suivants.</p>
+      <p>La solution la plus simple serait de changer le nom des colonnes en supprimant celui qui dont l'information est absente, c'est-à-dire la colonne indiquant le POS du dépendant, comme ceci :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/8_ligne140.png" />
+      </div>
+      <br/>
+
+      <p>Exemple du tableau produit sans le décalge (les 10 premières lignes) :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/8_tableau_sans_decalage.png" />
+      </div>
+      <br/>
+
+      <p>Dans ce tableau la colonne "Mesure" correspond à la fréquence d'apparition du pattern et la colonne IM correspond au résultat du calcul du PMI, calculé à la ligne suivante du code :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/8_pmi_code.png" />
+      </div>
+      <br/>
+
+      <p>Les chiffres obtenus dans les deux colonnes en question semblent tout à fait correspondre aux données du corpus.</p>
+      <br/>
+      <p>Cependant cette solution nous fait perdre de l'information sur la relation. Nous pourrions donc dans un autre cas, chercher un moyen de récupérer le POS du dépendant dans <b>arg2pred_count</b>.</p>
+      <p>La ligne 155 a été commentée car la variable arg ne contient pas deux éléments mais un seul qui est le lemme du dépendant de la relation.</p>
+      <br/>
+      <p>Cette étape semble donc être respectée car le calcul de l'information mutuelle est bien présent, ainsi que le compte de l'apparition de chaque pattern. Ceci mise à part le décalage visible dans les colonnes du tableau.</p>
+
+    </section>
+
+    <section>
+      <h1 id="neuf" class="titre"><strong>9. Représentation graphique des informations</strong></h1>
+
+      <hr class="divide"/>
+
+		<p>L'objectif de cette partie était qu'à partir du fichier <b>csv</b> d'entré, produit dans les étapes précédentes, on puisse produire en sortie un fichier XML avec l'extension <b>.gexf</b>. Ce format correspond au type de fichier lisible par le site <b>Gephi Lite</b> (<a href="https://gephi.org/gephi-lite/">https://gephi.org/gephi-lite/</a>).</p>
+      <br/>
+      <p>Ce fichier contiendra la forme/syntaxe et les informations nécessaires à la production d'un graphe avec des noeuds contenant les POS-lemmes et des liens contenant les types de relations.</p>
+      <br/>
+      <p>Voici un exemple de ce à quoi doit ressembler un graphe :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/9_lutter_contre_moche.png" style=" width:700px;"/>
+        <img src="./assets/img/9_lutter_contre_beau.png" style=" width:700px;"/>
+      </div>
+      <br/>
+
+      <p>Vous pouvvez donc observer ici deux manières de visualiser un graphe contenant les mêmes informations sur Gephi Lite. Le premier correspond à tous les noeuds et les liens sans ajout de configuration de style. Il est très difficile de trouver où est le noeud centrale de départ dans cette visualisation. Le second est le même graphe mais avec l'ajout de paramètres de style comme :</p>
+      <list>
+		  <li>Avoir fait le calcul du <b>PageRank</b> et du <b>Degree</b> dans le menu Statistiques de Gephi Lite ;</li>
+		  <li>Avoir rendue la taille des nœuds proportionnelle au <b>PageRank</b> dans le menu <b>Apparences</b> de Gephi Lite ;</li>
+		  <li>Avoir filtré sur l’attribut <b>Degree</b> si le graphe comporte trop de sommets ;</li>
+		  <li>Avoir appliqué l'algorithme <b>ForceAtlas2</b> pour l'espace automatique entre chaque noeud, rendant plus lisible les points du graphe.</li>
+      </list>
+      <br/>
+
+      <p>Deux programmes Pythons ont été créés afin de réaliser des fichiers XML adaptés à Gephi. L'entrée de ces programmes est un fichier tsv contenant 35756 patterns. Ce dernier étant beaucoup trop grand pour que l'on affiche tout dans un même graphe, les programmes ont donc été pensés pour appliquer des filtres aux données d'entrées, afin de réduire le nombre de noeuds du graphe. Voici les filtres applicables :</p>
+      <list>
+		  <li>filtre choix du <b>noeud</b> de départ : permet d'indiquer le noeud de départ du texte (ex : dans le cas du graphe ci-dessus il s'agit de "lutter-contre")</li>
+		  <li>filtre sur le <b>seuil</b> : permet d'indiquer à partir de quelle valeur de l'IM garde-t-on les patterns</li>
+		  <li>filtre sur les <b>hapax</b> : permet d'indiquer si l'on souhaite garder ou non les patterns avec des hapax</li>
+		  <li>filtre sur les <b>liens uniques</b> : permet d'indiquer si l'on souhaite garder les patterns présents qu'une seule fois</li>
+      </list>
+      <br/>
+
+      <p>Il était attendu de ces programmes qu'on ne garde les relations noeuds-liens de type voisins des voisins.</p>
+      <br/>
+      <p>Commande lancée pour le test du programme sans networkx :</p>
+      <list>
+        <li>python3 visualisation.py -c exemple-information_mutuelle.tsv -n VERB-prendre-obj -s 5 -lu oui -ha oui</li>
+      </list>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/9_prendre_obj.png" />
+      </div>
+      <br/>
+
+      <p>Ci-dessus la visualisation du graphe sans toucher aux paramètres du site.</p>
+      <p>Ci-dessous la version embellie par les paramètres du site :</p>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/9_prendre_obj_beau.png" />
+      </div>
+      <br/>
+
+		<p>Commande lancée du programme utilisant la librairie <b>networkx</b> avec les mêmes arguments :</p>
+      <list>
+        <li>python3 visualisation_networkx.py -c ../exemple-information_mutuelle.tsv -s 5 --hapax --lien-unique -o mon_graphe.gexf -n VERB-prendre-obj</li>
+      </list>
+      <br/>
+
+      <p>Cette commande renvoie un graphe vide.</p>
+      <br/>
+
+      <list>
+        <li>python3 visualisation_networkx.py -c ../exemple-information_mutuelle.tsv -s 5 --hapax -o mon_graphe.gexf -n VERB-prendre-obj</li>
+      </list>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/9_net_prendre_obj.png" style=" width:700px;"/>
+        <img src="./assets/img/9_net_prendre_obj_beau.png"  style=" width:700px;"/>
+      </div>
+      <br/>
+
+      <p>Nous pouvons en déduire que pour le programme utilisant networkx, les liens uniques, c'est-à-dire les patterns présents qu'une seule fois, ont été confondus avec les voisins uniques.</p>
+      <br/>
+      <p>Nous avons choisi de prendre la correction du TD car nous avons mal appliqué la condition voisins des voisins dans nos deux programmes. De plus le programme de correction nous semblait beaucoup mieux car il utilise des dataclasses. Dans le cas du programme <b>visualisation.py</b>, nous avions souhaité utiliser des dataclasses mais nous n'avons pas réussi ce qui a ammené à manipuler une liste de dictionnaires. De plus le programme de correction contient plus de choix de filtres, dont celui des voisins des voisins. Nous avons aussi trouvé l'utilisation d'une fonction réccurcive très intéressante.</p>
+      <p>Pour finir, lorsque nous avons voulu corriger notre propre programme afin d'obtenir le résutlat souhaité, notre ordinateur s'est complètement bloqué lors du lancement du programme.</p>
+      <br/>
+      <p>Voici ce que donne le programme de correction, en appliquant les mêmes filtres qu'à nos deux programmes précèdents. On indique ici vouloir faire jusqu'à 2 pas dans les relations, ce qui correspond aux voisins des voisins.</p>
+      <p>Commande de lancement du nouveau programme :</p>
+      <list>
+        <li>python3 build_graph.py -c VERB-prendre-obj -s 2 -i 5 -u -f ../exemple-information_mutuelle.tsv graphe.gexf</li>
+      </list>
+
+      <div style="text-align: center;">
+        <img src="./assets/img/9_correction_prendre_obj.png" />
+      </div>
+      <br/>
+
+      <p>Sur Gephi Lite : on a calculé le PageRank et Degree. Dans Apparences, on a coloré les noeuds par classe (predicat orange, argument violet) et la taille des noeuds est par Degree.</p>
+      <br/>
+      <p>Ce dernier programme permettant de produire des visualisations s'avère être très utile dans ce projet. En effet, grâce à ces programmes il est possible de personnaliser les visualisations, les noeuds que l'on souhaite prendre et le nombre de voisins de ce dernier.</p>
+      <p>De plus, dans un travail qui manipule les mots, il est intéressant d'avoir une visualisation permettant de voir rapidement et facilement les relations existantes entre ces derniers.</p>
+      <p>De plus, dans le monde du travail et en TAL, les graphes sont très appréciés car ils permettent d'avoir une représentation visuelle des résultats plutôt qu'un paragraphe d'explication.</p>
+		<br/>
+      <p>Une image vaut bien plus qu'une longue explication.</p>
+    </section>
+
+    <section>
+      <section class="team">
+        <div id="us" class="center">
+          <h2 id="text">Notre team</h2>
+          <hr class="divide"/>
+
+        </div>
+          <div" class="team-content">
+              <div class="box has-background-link-light">
+
+                  <img src="./assets/img/me1.png" style="width:935px;">
+                  <h3>BRISSET Lise</h3>
+                  <h5>Sorbonne Nouvelle</h5>
+                   <a href="https://github.com/Lise-Brisset"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg></a>
+
+              </div>
+
+              <div class="box has-background-warning-light">
+                  <img src="./assets/img/me.PNG">
+                  <h3>AUGUSTYN Patricia</h3>
+                  <h5>Sorbonne Nouvelle</h5>
+                  <a href="https://github.com/PatriciaAugustyn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg></a>
+
+              </div>
+
+              <div class="box has-background-success-light">
+                  <img src="./assets/img/me2.png">
+                  <h3>BELHOUL Lydia</h3>
+                  <h5>Nanterre</h5>
+                   <a href="https://github.com/lydiaBELHOUL"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg></a>
+              </div>
+
+          </div>
+      </section>
+
+
+
+  </body>
+</html>

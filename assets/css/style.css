@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media(prefers-reduced-motion) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+/*Fond*/
+body {
+    min-height: 100vh;
+    background: #F5F5DC;
+    /*font-family: "Goudy Bookletter 1911";*/
+
+    font-family: "Baskervville";
+    font-size: 20px;
+
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 120px;
+    /*background: rgba(255, 255, 255, 0.5);*/
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+nav ul li:hover {
+    transform: scale(1.1); /* Zoom sur survol */
+}
+
+.lien {
+    color: white;
+    text-decoration: none;
+}
+
+.lien:hover{
+    color: #F5F5DC;
+}
+
+.titre{
+    font-size: 50px;
+    text-align: justify;
+    line-height: 70px;
+}
+
+section {
+    padding: 10rem;
+    text-align: justify;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+.divide {
+    background-color: black;
+}
+
+/* Presentation du groupe*/
+
+.team-content{
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.box {
+    border-radius: 15px;
+    transition: all .38s ease;
+
+}
+
+.box h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr {
+    transition: background-color 0.8s;
+  }
+
+tr:hover {
+    background-color: black;
+    color: white;
+
+  }
+
+
+
+
